@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": false,
+        "inlineSourceMap": true,
+        "sourceRoot": "./scripts",
+        "strictNullChecks": true
+    },
+    "files": [
+        "./scripts/omv2dts.ts"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "omv2dts",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch",
+    "omv2dts-illu": "node scripts/omv2dts.js omv/illustrator-omv.xml definitions/illustrator.d.ts",
+    "omv2dts-js": "node scripts/omv2dts.js omv/javascript-omv.xml definitions/javascript.d.ts",
+    "omv2dts-ps": "node scripts/omv2dts.js omv/photoshop-omv.xml definitions/photoshop.d.ts",
+    "omv2dts-ui": "node scripts/omv2dts.js omv/scriptui-omv.xml definitions/scriptui.d.ts",
+    "omv2dts-all": "npm run omv2dts-illu && npm run omv2dts-js && npm run omv2dts-ps && npm run omv2dts-ui"
+  },
+  "author": "mak",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^7.0.12",
+    "@types/xml2json": "^0.10.0",
+    "typescript": "^2.2.2"
+  },
+  "dependencies": {
+    "xml2json": "^0.11.0"
+  }
+}
